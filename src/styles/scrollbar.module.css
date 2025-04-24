@@ -1,0 +1,22 @@
+.scrollbar {
+  background-color: var(--mantine-color-body);
+  margin-top: 2px;
+  border-top: 1px solid
+    light-dark(var(--mantine-color-gray-3), var(--mantine-color-dark-4));
+}
+
+.thumb {
+  background-color: light-dark(
+    var(--mantine-color-gray-4),
+    var(--mantine-color-dark-4)
+  );
+  border-radius: 4px;
+  transition: background-color 150ms ease;
+
+  &:hover {
+    background-color: light-dark(
+      var(--mantine-color-gray-5),
+      var(--mantine-color-dark-3)
+    );
+  }
+}

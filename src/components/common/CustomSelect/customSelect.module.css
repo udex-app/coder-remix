@@ -1,0 +1,25 @@
+
+    .input {
+        border: 1px solid var(--mantine-color-gray-3);
+        border-radius: 8px;
+        font-weight: 500;
+        font-size: 14px;
+        color: var(--mantine-color-gray-8);
+      }
+      
+      .input::placeholder {
+        font-weight: 500;
+        font-size: 14px;
+        color: var(--mantine-color-gray-5);
+      }
+      
+      .input:focus {
+        border: 1px solid var(--mantine-color-blue-6);
+        outline: none;
+        box-shadow: none;
+      }
+
+.section{
+    top: 3px
+} 
+

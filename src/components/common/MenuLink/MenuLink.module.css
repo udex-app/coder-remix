@@ -1,0 +1,88 @@
+.menuLink {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  margin: 0 auto;
+  border-radius: var(--mantine-radius-sm);
+  color: light-dark(var(--mantine-color-gray-7), var(--mantine-color-dark-2));
+  transition: all 0.25s cubic-bezier(0.25, 0.1, 0.25, 1);
+  text-decoration: none;
+  will-change: width, margin, padding, border-radius;
+}
+
+.menuLink.expanded {
+  width: 100%;
+  justify-content: flex-start;
+  padding: 0 16px;
+  border-radius: 0;
+  margin: 0;
+}
+
+.menuLink:hover {
+  background-color: light-dark(
+    var(--mantine-color-blue-0),
+    var(--mantine-color-blue-9)
+  );
+  color: light-dark(var(--mantine-color-blue-6), var(--mantine-color-white));
+}
+
+.menuLinkActive {
+  composes: menuLink;
+  background-color: light-dark(
+    var(--mantine-color-blue-0),
+    var(--mantine-color-blue-9)
+  );
+  color: light-dark(var(--mantine-color-blue-6), var(--mantine-color-white));
+}
+
+.menuLinkActive.expanded {
+  border-radius: 0;
+  margin: 0;
+}
+
+.iconWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+  transition: transform 0.25s cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+
+.linkLabel {
+  display: none;
+  text-decoration: none;
+  white-space: nowrap;
+  opacity: 0;
+  margin-left: 0;
+  transition: all 0.25s cubic-bezier(0.25, 0.1, 0.25, 1);
+  overflow: hidden;
+  max-width: 0;
+  will-change: opacity, max-width, margin-left;
+}
+
+.linkLabel.labelExpanded {
+  display: block;
+  opacity: 1;
+  max-width: 200px;
+  margin-left: 12px;
+  transition: all 0.25s cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+
+@media (max-width: 48em) {
+  .menuLink {
+    width: 100%;
+    justify-content: flex-start;
+    padding: 0 16px;
+  }
+
+  .linkLabel {
+    display: block;
+    opacity: 1;
+    max-width: none;
+    margin-left: 12px;
+  }
+}

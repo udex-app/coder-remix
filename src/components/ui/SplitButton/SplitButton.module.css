@@ -1,0 +1,39 @@
+.container {
+  overflow: hidden;
+  border-radius: var(--mantine-radius-sm);
+}
+
+.button {
+  transition: all 200ms ease;
+}
+
+.button:active {
+  transform: none;
+}
+
+.mainButton {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.dropdownButton {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  padding: 8px;
+}
+
+.hovered {
+  opacity: 0.85;
+}
+
+.pressed {
+  transform: translateY(1px);
+}
+
+.filledBorder {
+  border-left: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+.outlineBorder {
+  border-left: 1px solid;
+} 

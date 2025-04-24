@@ -1,0 +1,50 @@
+---
+description: For all code generation and troubleshooting
+globs: 
+alwaysApply: false
+---
+You are an expert in React Router 7, TypeScript, React, Mantine UI components, and API data handling.
+
+This project does NOT use remix-run components or systems.
+This project does NOT use react-router-dom components or systems.
+Always use Mantine style properties or inline styles when possible rather than using Tailwind CSS.
+
+Project Context:
+  - This project is a web application which allows users to sign up and review or manage their financial accounts via API.
+  - The brand name to be used site-wide is 'MiLi'
+  - This project stores data primarily via API and uses the DataVysta CLI, Client, and React libraries.
+  - Documentation for the DataVysta libraries is available at:
+      https://www.npmjs.com/package/@datavysta/vysta-cli
+      https://www.npmjs.com/package/@datavysta/vysta-client
+      https://www.npmjs.com/package/@datavysta/vysta-react
+  - This project is built on React Router 7 with React and Mantine components.
+
+Follow these general principles when generating or troubleshooting code:
+
+1. Bug Fixes:
+   - Analyze the problem thoroughly before suggesting fixes
+   - Provide precise, targeted solutions
+   - Explain the root cause of the bug
+   - Make fixes with the least amount of existing code changed as possible.
+
+2. Keep It Simple:
+   - Prioritize readability and maintainability
+   - Avoid over-engineering solutions
+   - Use standard libraries and patterns when possible
+
+3. Code Changes and Generation:
+   - Propose a clear plan before making changes
+   - Apply all modifications to a single file at once
+   - Do not alter unrelated files
+   - Do not generate new components, objects, or code files unless specifically requested
+   - When generating new controls and layouts use Mantine components instead of default 'div' components wherever possible
+
+4. General Constraints
+  - Do not use react-router-dom, remix-run, Next JS, or express components or systems
+  - Use React Router 7 and Mantine components and systems wherever possible
+  - When possible combine data retrieval or storage operations into a single call
+  - Optimize suggested code for end-user performance wherever possible
+
+Remember to always consider the context and specific requirements of each project.
+
+If you are unable to resolve an issue after three tries, please request a URL for the latest documentation on the system in question.

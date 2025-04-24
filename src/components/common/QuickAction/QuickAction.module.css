@@ -1,0 +1,20 @@
+.icon {
+    background-color: light-dark(var(--mantine-color-gray-0), var(--mantine-color-dark-6));
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    color: light-dark(var(--mantine-color-gray-6), var(--mantine-color-dark-2));
+}
+
+.card {
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-2px);
+    box-shadow: light-dark(
+        rgba(0, 0, 0, 0.1) 0px 4px 12px,
+        rgba(255, 255, 255, 0.1) 0px 4px 12px
+    ) !important;
+}

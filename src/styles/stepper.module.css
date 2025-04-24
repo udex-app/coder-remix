@@ -1,0 +1,23 @@
+.stepper {
+  box-shadow: var(--mantine-shadow-xs);
+}
+
+.stepBody[data-completed] {
+  background-color: var(--mantine-color-green-6) !important;
+  color: white !important;
+}
+
+.stepBody[data-progress] {
+  background-color: var(--mantine-color-blue-6) !important;
+  color: white !important;
+}
+
+.stepIcon[data-completed] {
+  background-color: var(--mantine-color-green-7) !important;
+  border-color: var(--mantine-color-green-7) !important;
+  color: white !important;
+}
+
+.separator[data-active] {
+  background-color: var(--mantine-color-green-7) !important;
+}
